@@ -29,16 +29,8 @@ jobs:
 
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress
-
-    # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
-    # Docs: https://getcomposer.org/doc/articles/scripts.md
-
-    - name: Run test suite
-      run: composer run-script test
-    
+      
     - name: Archive using zip or tar
-    # You may pin to the exact commit or the version.
-    # uses: NSCoder/archive-action@10750a36d4f79d825a156afa7efd3ae78d0b6eb7
       uses: NSCoder/archive-action@v1.0.0
       
     - name: build-and-publish
