@@ -1,2 +1,2 @@
 # InTargos-Admin
-Admin Panel
+Admin Panel for CICD
